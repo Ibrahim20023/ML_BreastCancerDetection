@@ -190,7 +190,7 @@ def main():
     initial_sidebar_state="expanded"
   )
   
-  with open("style.css") as f:
+  with open("style/style.css") as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
     add_menu()
 
