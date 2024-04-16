@@ -135,7 +135,7 @@ def add_menu():
     if st.button("Submit Feedback"):
         # Send feedback data to JSON Server
         feedback_data = {'Rating': rating, 'Additional Comments': additional_comments}
-        response = requests.post('http://localhost:3000/feedbacks', json=feedback_data)
+        response = requests.post('https://feedbackdata-8xrj.onrender.com/feedback', json=feedback_data)
 
         if response.status_code == 201:
             st.success("Thank you for your feedback! Your feedback has been saved.")
