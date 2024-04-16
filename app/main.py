@@ -185,7 +185,7 @@ def add_menu():
 def main():
   st.set_page_config(
     page_title="Breast Cancer Classifier",
-    page_icon=":female-doctor:",
+    page_icon="style/page_icon.png",
     layout="wide",
     initial_sidebar_state="expanded"
   )
